@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AkcayDev</title>
+<meta name="description" content="AkcayDev uygulama ve oyun geliştirme resmi sitesi.">
+<style>
+  :root { --bg:#14110f; --kart:#211c18; --yazi:#f3ede6; --soluk:#b9ada0; --vurgu:#e8a33d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--yazi); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:2.2rem; margin:0 0 4px; }
+  .alt { color:var(--soluk); margin:0 0 32px; }
+  .kart { background:var(--kart); border-radius:14px; padding:20px; display:flex; gap:18px; align-items:center; }
+  .kart img { width:88px; height:88px; border-radius:18px; flex:none; }
+  .kart h2 { margin:0 0 4px; font-size:1.3rem; }
+  .kart p { margin:0 0 10px; color:var(--soluk); }
+  a { color:var(--vurgu); }
+  .dugme { display:inline-block; padding:10px 16px; border:1px solid var(--vurgu); border-radius:10px; text-decoration:none; margin:4px 8px 0 0; }
+  footer { margin-top:40px; color:var(--soluk); font-size:.95rem; }
+  .dil { float:right; }
+  @media (max-width:480px){ .kart{flex-direction:column; align-items:flex-start;} }
+</style>
+</head>
+<body>
+<main>
+  <a class="dil" href="#en">English</a>
+  <h1>AkcayDev</h1>
+  <p class="alt">Uygulama ve oyun geliştirme.</p>
+
+  <div class="kart">
+    <img src="horoz-dovusu-retro/ikon.png" alt="Horoz Dövüşü Retro simgesi">
+    <div>
+      <h2>Horoz Dövüşü Retro</h2>
+      <p>Retro tarzda, çizgi film görünümlü horoz dövüşü oyunu. Android için yakında Google Play'de.</p>
+      <a class="dugme" href="horoz-dovusu-retro/gizlilik.html">Gizlilik politikası</a>
+    </div>
+  </div>
+
+  <footer>
+    İletişim: <a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a>
+  </footer>
+
+  <hr id="en" style="margin:48px 0;border:0;border-top:1px solid #3a322b">
+  <h1>AkcayDev</h1>
+  <p class="alt">Apps and games.</p>
+  <div class="kart">
+    <img src="horoz-dovusu-retro/ikon.png" alt="Horoz Dövüşü Retro icon">
+    <div>
+      <h2>Horoz Dövüşü Retro (Retro Rooster Fight)</h2>
+      <p>A retro, cartoon-style rooster fighting game. Coming soon to Google Play for Android.</p>
+      <a class="dugme" href="horoz-dovusu-retro/gizlilik.html#en">Privacy policy</a>
+    </div>
+  </div>
+  <footer>
+    Contact: <a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a> · © 2026 AkcayDev
+  </footer>
+</main>
+</body>
+</html>
