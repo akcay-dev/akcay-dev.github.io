@@ -1,26 +1,35 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-dil="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası - Horoz Dövüşü Retro</title>
+<link rel="icon" href="gorseller/ikon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="horoz.css">
 <style>
-  :root { --bg:#14110f; --yazi:#f3ede6; --soluk:#b9ada0; --vurgu:#e8a33d; }
-  body { margin:0; background:var(--bg); color:var(--yazi); font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
-  h1 { font-size:1.8rem; } h2 { font-size:1.2rem; margin-top:28px; }
-  a { color:var(--vurgu); } .soluk { color:var(--soluk); }
-  hr { margin:48px 0; border:0; border-top:1px solid #3a322b; }
+  .metin { max-width: 760px; margin: 0 auto; padding: 24px 0 48px; }
+  .metin h1 { font-size: clamp(1.6rem, 5vw, 2.2rem); color: var(--seftali); margin: 8px 0 4px; }
+  .metin h2 { font-size: 1.05rem; color: var(--altin); margin: 28px 0 8px; }
+  .metin .soluk { color: var(--soluk); margin-top: 0; }
 </style>
+<script src="../dil.js"></script>
 </head>
 <body>
-<main>
-<p><a href="../">← AkcayDev</a> · <a href="#en">English</a></p>
-
+<div class="kap">
+  <header class="ust">
+    <a class="geri" href="./"><span lang="tr">← Horoz Dövüşü Retro</span><span lang="en">← Horoz Dövüşü Retro</span></a>
+    <div class="dil-sec" role="group" aria-label="Dil / Language">
+      <button data-dil-sec="tr">TR</button><button data-dil-sec="en">EN</button>
+    </div>
+  </header>
+  <main class="metin">
+<div lang="tr">
 <h1>Gizlilik Politikası</h1>
 <p class="soluk">Horoz Dövüşü Retro · Geliştirici: AkcayDev · Son güncelleme: 3 Kasım 2026</p>
 
-<p>Bu politika, Horoz Dövüşü Retro Android oyununun (paket: net.aktifbeyinler.horozdovusuretro) hangi verileri nasıl kullandığını açıklar.</p>
+<p>Bu politika, Horoz Dövüşü Retro Android oyununun (paket: com.akcaydev.horozdovusuretro) hangi verileri nasıl kullandığını açıklar.</p>
 
 <h2>Topladığımız veriler</h2>
 <ul>
@@ -50,13 +59,12 @@
 
 <h2>İletişim</h2>
 <p><a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a></p>
-
-<hr id="en">
-
+</div>
+<div lang="en">
 <h1>Privacy Policy</h1>
 <p class="soluk">Horoz Dövüşü Retro · Developer: AkcayDev · Last updated: November 3, 2026</p>
 
-<p>This policy explains what data the Horoz Dövüşü Retro Android game (package: net.aktifbeyinler.horozdovusuretro) uses and how.</p>
+<p>This policy explains what data the Horoz Dövüşü Retro Android game (package: com.akcaydev.horozdovusuretro) uses and how.</p>
 
 <h2>Data we collect</h2>
 <ul>
@@ -86,6 +94,9 @@
 
 <h2>Contact</h2>
 <p><a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a></p>
-</main>
+</div>
+  </main>
+  <footer class="alt"><span>© 2026 AkcayDev</span><a href="../">akcay-dev.github.io</a></footer>
+</div>
 </body>
 </html>

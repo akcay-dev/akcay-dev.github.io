@@ -1,61 +1,88 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-dil="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AkcayDev</title>
 <meta name="description" content="AkcayDev uygulama ve oyun geliştirme resmi sitesi.">
-<style>
-  :root { --bg:#14110f; --kart:#211c18; --yazi:#f3ede6; --soluk:#b9ada0; --vurgu:#e8a33d; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--yazi); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
-  h1 { font-size:2.2rem; margin:0 0 4px; }
-  .alt { color:var(--soluk); margin:0 0 32px; }
-  .kart { background:var(--kart); border-radius:14px; padding:20px; display:flex; gap:18px; align-items:center; }
-  .kart img { width:88px; height:88px; border-radius:18px; flex:none; }
-  .kart h2 { margin:0 0 4px; font-size:1.3rem; }
-  .kart p { margin:0 0 10px; color:var(--soluk); }
-  a { color:var(--vurgu); }
-  .dugme { display:inline-block; padding:10px 16px; border:1px solid var(--vurgu); border-radius:10px; text-decoration:none; margin:4px 8px 0 0; }
-  footer { margin-top:40px; color:var(--soluk); font-size:.95rem; }
-  .dil { float:right; }
-  @media (max-width:480px){ .kart{flex-direction:column; align-items:flex-start;} }
-</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+<script src="dil.js"></script>
 </head>
 <body>
-<main>
-  <a class="dil" href="#en">English</a>
-  <h1>AkcayDev</h1>
-  <p class="alt">Uygulama ve oyun geliştirme.</p>
+<div class="kap">
+  <header class="ust">
+    <span></span>
+    <div class="dil-sec" role="group" aria-label="Dil / Language">
+      <button data-dil-sec="tr">TR</button><button data-dil-sec="en">EN</button>
+    </div>
+  </header>
 
-  <div class="kart">
-    <img src="horoz-dovusu-retro/ikon.png" alt="Horoz Dövüşü Retro simgesi">
-    <div>
-      <h2>Horoz Dövüşü Retro</h2>
-      <p>Retro tarzda, çizgi film görünümlü horoz dövüşü oyunu. Android için yakında Google Play'de.</p>
-      <a class="dugme" href="horoz-dovusu-retro/gizlilik.html">Gizlilik politikası</a>
+  <section class="kahraman">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 150" role="img" aria-label="akcaydev">
+  <defs>
+    <linearGradient id="lg-m" x1="0" x2="1"><stop offset="0" stop-color="#12d0ff"/><stop offset="1" stop-color="#2a6bff"/></linearGradient>
+    <linearGradient id="lg-c" x1="0" x2="1"><stop offset="0" stop-color="#2a6bff" stop-opacity="0"/><stop offset=".5" stop-color="#12b6ff"/><stop offset="1" stop-color="#2a6bff" stop-opacity="0"/></linearGradient>
+    <filter id="lg-p" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g filter="url(#lg-p)" fill="url(#lg-m)">
+    <path d="M70 18 L88 36 L52 72 L88 108 L70 126 L16 72 Z"/>
+    <path d="M570 18 L552 36 L588 72 L552 108 L570 126 L624 72 Z"/>
+  </g>
+  <text x="320" y="96" text-anchor="middle" font-family="'Exo 2', 'Segoe UI', sans-serif" font-weight="700" font-size="84" letter-spacing="-1">
+    <tspan fill="#ffffff">akcay</tspan><tspan fill="url(#lg-m)">dev</tspan>
+  </text>
+  <rect x="130" y="138" width="380" height="3" rx="1.5" fill="url(#lg-c)" filter="url(#lg-p)"/>
+</svg>
+    <p lang="tr">Uygulama ve oyun geliştirme. Mobil oyunlar, kullanışlı uygulamalar ve geliştirme notları.</p>
+    <p lang="en">Apps and games. Mobile games, handy apps and development notes.</p>
+  </section>
+
+  <h2><span lang="tr">Oyunlar</span><span lang="en">Games</span></h2>
+  <div class="izgara">
+    <a class="proje" href="horoz-dovusu-retro/">
+      <img class="simge" src="horoz-dovusu-retro/gorseller/ikon.webp" alt="">
+      <div>
+        <h3 lang="tr">Horoz Dövüşü Retro</h3><h3 lang="en">Rooster Fight Retro</h3>
+        <p lang="tr">90'ların arcade ruhunda piksel horoz dövüşü. Android.</p>
+        <p lang="en">Pixel rooster fighting in the spirit of 90s arcades. Android.</p>
+        <span class="etiket" lang="tr">Yakında Google Play'de</span><span class="etiket" lang="en">Coming soon to Google Play</span>
+      </div>
+    </a>
+  </div>
+
+  <h2><span lang="tr">Uygulamalar</span><span lang="en">Apps</span></h2>
+  <div class="izgara">
+    <div class="proje">
+      <div class="simge bos">ÜTS</div>
+      <div>
+        <h3>ÜTS</h3>
+        <p lang="tr">Yeni uygulama hazırlanıyor.</p>
+        <p lang="en">A new app is on the way.</p>
+        <span class="etiket" lang="tr">Yakında</span><span class="etiket" lang="en">Coming soon</span>
+      </div>
     </div>
   </div>
 
-  <footer>
-    İletişim: <a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a>
-  </footer>
-
-  <hr id="en" style="margin:48px 0;border:0;border-top:1px solid #3a322b">
-  <h1>AkcayDev</h1>
-  <p class="alt">Apps and games.</p>
-  <div class="kart">
-    <img src="horoz-dovusu-retro/ikon.png" alt="Horoz Dövüşü Retro icon">
-    <div>
-      <h2>Horoz Dövüşü Retro (Retro Rooster Fight)</h2>
-      <p>A retro, cartoon-style rooster fighting game. Coming soon to Google Play for Android.</p>
-      <a class="dugme" href="horoz-dovusu-retro/gizlilik.html#en">Privacy policy</a>
-    </div>
+  <h2>Blog</h2>
+  <div class="izgara">
+    <a class="proje" href="https://aktif-beyinler.blogspot.com/" rel="noopener">
+      <div class="simge bos">✎</div>
+      <div>
+        <h3>Aktif Beyinler</h3>
+        <p lang="tr">Yazılar, notlar ve geliştirme günlüğü.</p>
+        <p lang="en">Posts, notes and dev log (Turkish).</p>
+        <span class="etiket" lang="tr">Bloga git</span><span class="etiket" lang="en">Visit blog</span>
+      </div>
+    </a>
   </div>
-  <footer>
-    Contact: <a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a> · © 2026 AkcayDev
+
+  <footer class="alt">
+    <span>© 2026 AkcayDev</span>
+    <span><span lang="tr">İletişim:</span><span lang="en">Contact:</span> <a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a></span>
   </footer>
-</main>
+</div>
 </body>
 </html>

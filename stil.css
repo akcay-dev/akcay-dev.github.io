@@ -1,0 +1,30 @@
+/* AkcayDev ana site */
+:root {
+  --bg: #05070d; --kart: #0d1220; --cizgi: #1c2540;
+  --yazi: #eef2fb; --soluk: #8e9ab8;
+  --mavi: #12b6ff; --mavi2: #2a6bff;
+}
+* { box-sizing: border-box; }
+html[data-dil="tr"] [lang="en"], html[data-dil="en"] [lang="tr"] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--yazi); font: 17px/1.6 "Space Grotesk", system-ui, sans-serif; }
+a { color: var(--mavi); }
+.kap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.ust { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.ust .logo-kucuk svg { height: 40px; width: auto; display: block; }
+.dil-sec { display: flex; gap: 4px; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 999px; padding: 4px; }
+.dil-sec button { font: 600 15px "Space Grotesk", sans-serif; color: var(--soluk); background: none; border: 0; border-radius: 999px; min-width: 48px; min-height: 40px; cursor: pointer; }
+.dil-sec button[aria-pressed="true"] { background: var(--mavi2); color: #fff; }
+.kahraman { text-align: center; padding: 56px 0 40px; }
+.kahraman svg { width: min(640px, 100%); height: auto; }
+.kahraman p { color: var(--soluk); font-size: 1.15rem; margin: 18px auto 0; max-width: 560px; }
+h2 { font: 700 1.5rem "Exo 2", sans-serif; letter-spacing: .02em; margin: 48px 0 16px; display: flex; align-items: center; gap: 10px; }
+h2::before { content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--mavi); box-shadow: 0 0 12px var(--mavi); }
+.izgara { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.proje { display: flex; gap: 16px; align-items: center; padding: 18px; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 16px; color: inherit; text-decoration: none; transition: border-color .2s, transform .2s; min-height: 120px; }
+a.proje:hover { border-color: var(--mavi); transform: translateY(-2px); }
+.proje .simge { width: 84px; height: 84px; border-radius: 18px; flex: none; object-fit: cover; }
+.proje .simge.bos { display: grid; place-items: center; background: linear-gradient(135deg, #10244a, #0a1428); font: 700 1.4rem "Exo 2", sans-serif; color: var(--mavi); }
+.proje h3 { margin: 0 0 4px; font: 700 1.15rem "Exo 2", sans-serif; }
+.proje p { margin: 0; color: var(--soluk); font-size: .95rem; }
+.etiket { display: inline-block; margin-top: 8px; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--mavi); }
+.alt { margin-top: 64px; padding: 28px 0 40px; border-top: 1px solid var(--cizgi); color: var(--soluk); font-size: .95rem; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
