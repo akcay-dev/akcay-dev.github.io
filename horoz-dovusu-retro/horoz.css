@@ -15,7 +15,7 @@ h1, h2, h3 { font-family: "Archivo Black", "Arial Black", sans-serif; font-weigh
 .ust { position: sticky; top: 0; z-index: 10; background: rgba(14,10,8,.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--cizgi); }
 .ust .kap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; }
 .geri { display: flex; align-items: center; gap: 8px; color: var(--soluk); text-decoration: none; font-weight: 600; min-height: 44px; }
-.geri svg { height: 26px; width: auto; }
+.geri img { height: 30px; width: auto; display: block; }
 .dil-sec { display: flex; gap: 4px; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 999px; padding: 4px; }
 .dil-sec button { font: 600 15px "Space Grotesk", sans-serif; color: var(--soluk); background: none; border: 0; border-radius: 999px; min-width: 48px; min-height: 40px; cursor: pointer; }
 .dil-sec button[aria-pressed="true"] { background: var(--turuncu); color: #fff; }
