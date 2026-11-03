@@ -25,7 +25,7 @@ h1, h2, h3 { font-family: "Archivo Black", "Arial Black", sans-serif; font-weigh
 
 .kahraman { text-align: center; padding: 72px 0 56px; }
 .kahraman .ikon { width: 112px; height: 112px; border-radius: 24px; margin: 0 auto; display: block; box-shadow: 0 10px 40px rgba(255,92,20,.35); }
-.kahraman h1 { font-size: clamp(2rem, 6vw, 3.6rem); line-height: 1.08; margin: 20px auto 14px; max-width: 900px; color: var(--seftali); text-shadow: 0 0 28px rgba(255,92,20,.45); }
+.kahraman h1 { font-size: clamp(1.3rem, 3.4vw, 2rem); line-height: 1.15; margin: 18px auto 12px; max-width: 900px; text-wrap: balance; color: var(--seftali); text-shadow: 0 0 28px rgba(255,92,20,.45); }
 .kahraman p { max-width: 640px; margin: 0 auto; font-size: 1.12rem; color: var(--yazi); }
 .dugmeler { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 30px; }
 .dugme { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 26px; border-radius: 10px; font: 700 1rem "Space Grotesk", sans-serif; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; }
