@@ -1,25 +1,32 @@
 /* AkcayDev ana site */
 :root {
-  --bg: #05070d; --kart: #0d1220; --cizgi: #1c2540;
+  --dis: #020306; --bg: #070b16; --bg2: #0e1528; --serit: #0c1426; --kart: #111a2e; --cizgi: #1f2b4a;
   --yazi: #eef2fb; --soluk: #8e9ab8;
   --mavi: #12b6ff; --mavi2: #2a6bff;
 }
 * { box-sizing: border-box; }
 html[data-dil="tr"] [lang="en"], html[data-dil="en"] [lang="tr"] { display: none !important; }
-body { margin: 0; background: var(--bg); color: var(--yazi); font: 17px/1.6 "Space Grotesk", system-ui, sans-serif; }
+body { margin: 0; background: var(--dis); color: var(--yazi); font: 17px/1.6 "Space Grotesk", system-ui, sans-serif; }
 a { color: var(--mavi); }
-.kap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
-.ust { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
-.ust .logo-kucuk svg { height: 40px; width: auto; display: block; }
+.sayfa { max-width: 1240px; margin: 0 auto; background: var(--bg); border-left: 1px solid var(--cizgi); border-right: 1px solid var(--cizgi); box-shadow: 0 0 60px rgba(0,0,0,.7); min-height: 100vh; }
+.kap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.ust-serit { background: var(--serit); border-bottom: 2px solid var(--mavi); }
+.ust { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
+.ust-ad { font: 700 1.3rem "Exo 2", sans-serif; color: #fff; }
+.ust-ad b { color: var(--mavi); }
 .dil-sec { display: flex; gap: 4px; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 999px; padding: 4px; }
 .dil-sec button { font: 600 15px "Space Grotesk", sans-serif; color: var(--soluk); background: none; border: 0; border-radius: 999px; min-width: 48px; min-height: 40px; cursor: pointer; }
 .dil-sec button[aria-pressed="true"] { background: var(--mavi2); color: #fff; }
-.kahraman { text-align: center; padding: 56px 0 40px; }
+.kahraman { text-align: center; padding: 56px 0 48px; background: radial-gradient(ellipse at 50% 0, rgba(42,107,255,.16), transparent 70%); border-bottom: 2px solid var(--cizgi); }
 .kahraman svg { width: min(640px, 100%); height: auto; }
 .kahraman p { color: var(--soluk); font-size: 1.15rem; margin: 18px auto 0; max-width: 560px; }
-h2 { font: 700 1.5rem "Exo 2", sans-serif; letter-spacing: .02em; margin: 48px 0 16px; display: flex; align-items: center; gap: 10px; }
+.bolum { padding: 40px 0 48px; border-bottom: 2px solid var(--cizgi); }
+.bolum.koyu { background: var(--bg2); }
+h2 { font: 700 1.5rem "Exo 2", sans-serif; letter-spacing: .02em; margin: 0 0 18px; display: flex; align-items: center; gap: 10px; }
 h2::before { content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--mavi); box-shadow: 0 0 12px var(--mavi); }
-.izgara { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.izgara { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 960px) { .izgara { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .izgara { grid-template-columns: 1fr; } }
 .proje { display: flex; gap: 16px; align-items: center; padding: 18px; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 16px; color: inherit; text-decoration: none; transition: border-color .2s, transform .2s; min-height: 120px; }
 a.proje:hover { border-color: var(--mavi); transform: translateY(-2px); }
 .proje .simge { width: 84px; height: 84px; border-radius: 18px; flex: none; object-fit: cover; }
@@ -27,4 +34,5 @@ a.proje:hover { border-color: var(--mavi); transform: translateY(-2px); }
 .proje h3 { margin: 0 0 4px; font: 700 1.15rem "Exo 2", sans-serif; }
 .proje p { margin: 0; color: var(--soluk); font-size: .95rem; }
 .etiket { display: inline-block; margin-top: 8px; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--mavi); }
-.alt { margin-top: 64px; padding: 28px 0 40px; border-top: 1px solid var(--cizgi); color: var(--soluk); font-size: .95rem; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+.alt-serit { background: var(--serit); border-top: 2px solid var(--cizgi); }
+.alt { padding: 24px 20px 36px; color: var(--soluk); font-size: .95rem; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }

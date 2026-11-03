@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AkcayDev</title>
-<meta name="description" content="AkcayDev uygulama ve oyun geliştirme resmi sitesi.">
+<meta name="description" content="AkcayDev: oyun, yazılım ve içerik projeleri.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,15 +12,18 @@
 <script src="dil.js"></script>
 </head>
 <body>
-<div class="kap">
-  <header class="ust">
-    <span></span>
+<div class="sayfa">
+<header class="ust-serit">
+  <div class="kap ust">
+    <span class="ust-ad">akcay<b>dev</b></span>
     <div class="dil-sec" role="group" aria-label="Dil / Language">
       <button data-dil-sec="tr">TR</button><button data-dil-sec="en">EN</button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="kahraman">
+<section class="kahraman">
+  <div class="kap">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 150" role="img" aria-label="akcaydev">
   <defs>
     <linearGradient id="lg-m" x1="0" x2="1"><stop offset="0" stop-color="#12d0ff"/><stop offset="1" stop-color="#2a6bff"/></linearGradient>
@@ -36,10 +39,13 @@
   </text>
   <rect x="130" y="138" width="380" height="3" rx="1.5" fill="url(#lg-c)" filter="url(#lg-p)"/>
 </svg>
-    <p lang="tr">Uygulama ve oyun geliştirme. Mobil oyunlar, kullanışlı uygulamalar ve geliştirme notları.</p>
-    <p lang="en">Apps and games. Mobile games, handy apps and development notes.</p>
-  </section>
+    <p lang="tr">Oyun, yazılım ve içerik projeleri.</p>
+    <p lang="en">Game, software and content projects.</p>
+  </div>
+</section>
 
+<section class="bolum">
+  <div class="kap">
   <h2><span lang="tr">Oyunlar</span><span lang="en">Games</span></h2>
   <div class="izgara">
     <a class="proje" href="horoz-dovusu-retro/">
@@ -52,7 +58,11 @@
       </div>
     </a>
   </div>
+  </div>
+</section>
 
+<section class="bolum koyu">
+  <div class="kap">
   <h2><span lang="tr">Uygulamalar</span><span lang="en">Apps</span></h2>
   <div class="izgara">
     <div class="proje">
@@ -65,10 +75,14 @@
       </div>
     </div>
   </div>
+  </div>
+</section>
 
+<section class="bolum">
+  <div class="kap">
   <h2>Blog</h2>
   <div class="izgara">
-    <a class="proje" href="https://aktif-beyinler.blogspot.com/" rel="noopener">
+    <a class="proje" href="https://aktif-beyinler.blogspot.com/" target="_blank" rel="noopener">
       <div class="simge bos">✎</div>
       <div>
         <h3>Aktif Beyinler</h3>
@@ -78,11 +92,15 @@
       </div>
     </a>
   </div>
+  </div>
+</section>
 
-  <footer class="alt">
+<footer class="alt-serit">
+  <div class="kap alt">
     <span>© 2026 AkcayDev</span>
     <span><span lang="tr">İletişim:</span><span lang="en">Contact:</span> <a href="mailto:emrahakcay61@hotmail.com">emrahakcay61@hotmail.com</a></span>
-  </footer>
+  </div>
+</footer>
 </div>
 </body>
 </html>
