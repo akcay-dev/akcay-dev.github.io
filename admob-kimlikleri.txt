@@ -1,0 +1,4 @@
+AdMob kimlikleri - Horoz Dövüşü Retro
+Yayıncı kimliği (publisher ID): pub-4842692722296909
+Uygulama kimliği (App ID): ca-app-pub-4842692722296909~7413387823
+Ödüllü reklam birimi kimliği: (bekleniyor)
