@@ -17,7 +17,9 @@ h1, h2, h3 { font-family: "Archivo Black", "Arial Black", sans-serif; font-weigh
 .menu { display: flex; gap: 4px; margin-left: auto; }
 .menu a { color: var(--soluk); text-decoration: none; font-weight: 600; font-size: .95rem; padding: 8px 14px; border-radius: 999px; transition: color .2s, background .2s; }
 .menu a:hover { color: var(--yazi); background: var(--kart2); }
-@media (max-width: 720px) { .menu { display: none; } .ust .dil-sec { margin-left: auto; } }
+.ust .dil-sec { margin-left: auto; }
+.menu + .dil-sec { margin-left: 0; }
+@media (max-width: 720px) { .menu { display: none; } .menu + .dil-sec { margin-left: auto; } }
 .oyun-adi { display: block; margin: 22px auto 0; font: 400 clamp(3rem, 11vw, 6.5rem)/.95 "Jersey 10", monospace; letter-spacing: .03em; text-transform: uppercase;
   background: linear-gradient(180deg, #ffe08a 0%, #ffc23d 40%, #ff5c14 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
   filter: drop-shadow(4px 4px 0 #3a1200) drop-shadow(0 0 18px rgba(255,92,20,.45)); }
